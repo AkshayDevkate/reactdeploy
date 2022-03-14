@@ -5,13 +5,13 @@ on:
     branches :   
       - "master"
 
-  jobs: 
-    build:
+jobs: 
+  build:
     runs-on: ubuntu-latest
 
-    strategy:
-      matrix:
-        node-version: [15.x]
+strategy:
+  matrix:
+    node-version: [15.x]
 
     steps:
      - name: Checkout 
